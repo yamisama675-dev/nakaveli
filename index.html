@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nakaveli streetwear — built different, worn your way.">
+  <title>NAKAVELI | Streetwear PNG</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">NAKAVELI</a>
+      <div class="navlinks">
+        <a href="#shop">SHOP ALL</a><a href="#shop" data-jump="tees">T-SHIRTS</a>
+        <a href="#shop" data-jump="hoodies">HOODIES</a><a href="#about">OUR STORY</a>
+      </div>
+      <div class="nav-actions">
+        <button class="menu-btn" id="mobileShopBtn">SHOP</button>
+        <button class="cart-btn" id="openCartBtn">BAG (<span id="cartCount">0</span>)</button>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">FROM A NAKA TO A NAKA</div>
+        <h1>BUILT<br>DIFFERENT.<br>WORN YOUR<br>WAY.</h1>
+        <p>Streetwear with a point of view. Discover the first Nakaveli essentials collection, designed for everyday rotation.</p>
+        <a class="primary-btn" href="#shop">SHOP THE DROP ↗</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract dark streetwear campaign artwork">
+        <div class="art-stamp">NAKAVELI / PORT MORESBY<br>EST. 2026 — DROP 001</div>
+      </div>
+    </section>
+    <section id="shop" class="shop-section">
+      <div class="section-head">
+        <div><h2>THE COLLECTION</h2><p>Everyday essentials. No unnecessary noise.</p></div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">ALL PIECES</button>
+          <button class="filter" data-filter="tees">T-SHIRTS</button>
+          <button class="filter" data-filter="hoodies">HOODIES</button>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+    <section class="about-section" id="about">
+      <h2>LESS TALK.<br>MORE PRESENCE.</h2>
+      <p>Nakaveli is a concept streetwear label built around clean design, confident fits and pieces you can wear your own way. This demo shows how a future PNG online store could look. Product artwork and inventory are illustrative placeholders, not live stock.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="logo footer-logo">NAKA<span>VELI</span></span>
+      <span>Made for the everyday. Designed in a noir state of mind.</span>
+      <span>© 2026 NAKAVELI · DEMO</span>
+    </div>
+  </footer>
+  <div class="overlay" id="cartOverlay" aria-hidden="true">
+    <aside class="cart-drawer" aria-label="Shopping bag">
+      <div class="drawer-head"><h2>YOUR BAG (<span id="drawerCount">0</span>)</h2><button class="close-btn" id="closeCartBtn">CLOSE ✕</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total"><span>Subtotal</span><span id="subtotal">K0.00</span></div>
+      <p class="note">Shipping is not calculated in this demo. A real store would confirm delivery options and costs for your location in Papua New Guinea.</p>
+      <button class="checkout-btn" id="checkoutBtn">CONTINUE TO CHECKOUT</button>
+      <p class="note">Demo only — no payment will be taken and no order will be sent.</p>
+    </aside>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
